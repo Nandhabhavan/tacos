@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product1</title>
+    
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5063a1ece8.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <div class="page-wrapper">
+
+      <nav class="navbar navbar-default pb-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa-solid fa-bars"></span>
+            </button>
+            <a class="navbar-brand">Uicampaign</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="student.html">Students</a></li>
+              <li><a href="employee.html">Employees</a></li>
+              <li class="active"><a href="dataentry.html">Data Entry</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section class="pb-section pb-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="buttons">
+  
+              <span><button class="fill" id="showDivision1">Student</button></span><span><button class="fill2" id="showDivision2">Employee</button></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div id="division1" class="division">
+
+        <section class="pb-section pb-section-sm">
+          <div class="container">
+            <div class="row">
+              <div class="column-md-12">
+                <div class="row pb-gutter0">
+                  <div class="column-md-7 column-md-push-1  pb-animate" id="pb-content">
+                    <p>Add Student Data</p>
+                    <form action="#" class="pb-form">
+                      <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Register Number</label>
+                        <input type="text" class="form-control" id="regno" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <select id="standard" class="stand-pic">
+                            <option value="hide">-- Standard --</option>
+                            <option value="1S">1</option>
+                            <option value="2S">2</option>
+                            <option value="3S">3</option>
+                            <option value="4S">4</option>
+                            <option value="5S">5</option>
+                            <option value="6S">6</option>
+                            <option value="7S">7</option>
+                            <option value="8S">8</option>
+                            <option value="9S">9</option>
+                            <option value="10S">10</option>
+                            <option value="11S">11</option>
+                            <option value="12S">12</option>
+                          </select> 
+                        
+                          <select id="stu-section" class="stand-pic">
+                            <option value="hide">-- Section --</option>
+                            <option value="None">None</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                          </select>
+
+                          <select id="stu-dept" class="stand-pic">
+                            <option value="hide">-- Department --</option>
+                            <option value="None">None</option>
+                            <option value="Cse">CSE</option>
+                            <option value="Bio">BIOLOGY</option>
+                            <option value="Com">COMMERCE</option>
+                            <option value="Art">ARTS</option>
+                          </select>
+
+                      </div>
+
+                      <div class="form-group">
+                        <label for="name">EMIS</label>
+                        <input type="text" class="form-control" id="emis" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Father Name</label>
+                        <input type="text" class="form-control" id="fname" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Father Occupation</label>
+                        <input type="text" class="form-control" id="foccu" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Mother Name</label>
+                        <input type="text" class="form-control" id="mname" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Mother Occupation</label>
+                        <input type="text" class="form-control" id="moccu" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Address</label>
+                        <textarea type="text" rows="4" class="form-control" id="addr" name="name" required></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Phone Number 1</label>
+                        <input type="text" class="form-control" id="phn1" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Phone Number 2</label>
+                        <input type="text" class="form-control" id="phn2" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Student Aadhar</label>
+                        <input type="email" class="form-control" id="saadhar" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="subject">Community & Caste</label>
+                        <input type="text" class="form-control" id="commu" name="number" required>
+                      </div>
+                      <div class="form-group radio-btn">
+                        <label>
+                          <input type="radio" name="radio"/>
+                          <span id="quo1">Government Quota</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="radio"/>
+                          <span id="quo2">Management Quota</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="fees">
+                          <span>Fees:</span>
+                          <input type="text" class="form-control" id="fee" name="fees" required>
+                          <span>Paid:</span>
+                          <input type="text" class="form-control" id="fee" name="fees" required>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <select multiple class="stu-doc" data-placeholder="Documents Submitted">
+                          <option>None</option>
+                          <option>Aadhar</option>
+                          <option>Marksheet 10th</option>
+                          <option>Marksheet 11th</option>
+                          <option>Marksheet 12th</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Submit">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <div id="division2" class="division" style="display: none;">
+
+      <section class="pb-section pb-section-sm">
+        <div class="container">
+          <div class="row">
+            <div class="column-md-12">
+              <div class="row pb-gutter0">
+                <div class="column-md-7 column-md-push-1  pb-animate" id="pb-content">
+                  <p>Add Employee Data</p>
+                  <form action="#" class="pb-form">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">ID</label>
+                      <input type="text" class="form-control" id="regno" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="standard" class="stand-pic">
+                          <option value="hide">-- Profession --</option>
+                          <option value="1S">Principal</option>
+                          <option value="2S">VP / AP</option>
+                          <option value="3S">Teacher</option>
+                          <option value="4S">Librarians</option>
+                          <option value="5S">Administrators</option>
+                          <option value="6S">Office Staffs</option>
+                          <option value="7S">Coaches</option>
+                          <option value="8S">Service Workers</option>
+                          <option value="9S">Drivers</option>
+                          <option value="10S">Security</option>
+                        </select> 
+                      
+                        <select id="stu-section" class="stand-pic">
+                          <option value="hide">-- Experience --</option>
+                          <option value="None">None</option>
+                          <option value="A">1 year</option>
+                          <option value="B">2 year</option>
+                          <option value="C">3 year</option>
+                          <option value="D">4 year</option>
+                          <option value="E">5 year</option>
+                          <option value="F">5+ years</option>
+                        </select>
+
+                        <select id="stu-dept" class="stand-pic">
+                          <option value="hide">-- Shift --</option>
+                          <option value="None">None</option>
+                          <option value="Cse">Day</option>
+                          <option value="Bio">Night</option>
+                          <option value="Bio">Part-time</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group">
+                      <label for="qual">Qualification</label>
+                      <input type="text" class="form-control" id="eaadhar" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="aadhar">Aadhar</label>
+                      <input type="text" class="form-control" id="eaadhar" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <textarea type="text" rows="4" class="form-control" id="addr" name="name" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Father Name</label>
+                      <input type="text" class="form-control" id="fname" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Father Occupation</label>
+                      <input type="text" class="form-control" id="foccu" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Mother Name</label>
+                      <input type="text" class="form-control" id="mname" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Mother Occupation</label>
+                      <input type="text" class="form-control" id="moccu" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="name">Phone Number 1</label>
+                      <input type="text" class="form-control" id="phn1" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Phone Number 2</label>
+                      <input type="text" class="form-control" id="phn2" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="subject">Community & Caste</label>
+                      <input type="text" class="form-control" id="commu" name="number" required>
+                    </div>
+                    <div class="form-group radio-btn">
+                      <label>
+                        <input type="radio" name="radio"/>
+                        <span id="quo1">Government Quota</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="radio"/>
+                        <span id="quo2">Management Quota</span>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="fees">
+                        <span>Salary Allocated</span>
+                        <input type="text" class="form-control" id="fee" name="fees" required>
+                        <span>Joining Date</span>
+                        <input type="date" class="form-control" id="fee" name="fees" required>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <select multiple class="emp-doc" data-placeholder="Documents Submitted">
+                        <option>Aadhar</option>
+                        <option>License</option>
+                        <option>Marksheet 10th</option>
+                        <option>Marksheet 12th</option>
+                        <option>Marksheet 12th</option>
+                        <option>Marksheet 12th</option>
+                        <option>Marksheet 12th</option>
+
+
+                        <option>Qualification Degree</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+      
+      <section class="pb-cta">
+        <div class="container">
+          <div class="row">
+          </div>
+        </div>
+      </section>
+      <footer class="pb-footer pb-bg">
+        <div class="container">
+          <div class="row">
+
+
+            <!-- <div class="column-md-3 column-md-push-1">
+              <div class="pb-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="courses.html">Students</a></li>
+                  <li><a href="employee.html">Educators</a></li>
+                  <li><a href="dataentry.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-md-4">
+              <div class="pb-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="pb-contact-info">
+                  <li><i class="fa-regular fa-envelope"></i><span>info@uicampaign.com</span></li>
+                  <li><i class="fa-solid fa-phone"></i><span>+91 9363988558</span></li>
+                </ul>
+              </div>
+            </div> -->
+           
+          </div>
+        </div>
+
+        <div class="pb-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="column-md-8 text-left">
+                <p><a>Uicampaign Solutions.</a></p>
+              </div>
+              <div class="column-md-4 pb-back-to-top">
+                <p><a class="js-backtotop" style="cursor: pointer;">Back to top <i class="fa-solid fa-up-long"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+</html>
